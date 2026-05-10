@@ -4,44 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TugasKu</title>
+
   <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
     body{
-      font-family: Arial;
-      background:#f5f7ff;
+      background:#f3f7ff;
+      color:#111;
+    }
+
+    .navbar{
+      background:white;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:bold;
+      color:#2563eb;
+    }
+
+    .hero{
+      padding:60px 20px;
       text-align:center;
-      padding:50px;
+    }
+
+    .hero h1{
+      font-size:38px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      color:#555;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      background:#2563eb;
+      color:white;
+      border:none;
+      padding:14px 24px;
+      border-radius:12px;
+      font-size:16px;
+    }
+
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:20px;
     }
 
     .card{
       background:white;
-      padding:30px;
+      padding:25px;
       border-radius:20px;
-      max-width:400px;
-      margin:auto;
-      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
     }
 
-    button{
-      background:#3b82f6;
-      color:white;
-      border:none;
-      padding:12px 20px;
-      border-radius:12px;
-      cursor:pointer;
-      font-size:16px;
+    .card h3{
+      margin-bottom:10px;
+      color:#2563eb;
     }
   </style>
 </head>
+
 <body>
 
-<div class="card">
-  <h1>TugasKu</h1>
-  <p>Website Micro Task Online</p>
+  <div class="navbar">
+    <div class="logo">TugasKu</div>
 
-  <button onclick="alert('TugasKu berhasil online!')">
-    Mulai
-  </button>
-</div>
+    <button class="btn">
+      Login
+    </button>
+  </div>
+
+  <section class="hero">
+    <h1>Platform Micro Task Modern</h1>
+
+    <p>
+      Cari uang online atau pasang engagement dengan mudah.
+    </p>
+
+    <button class="btn">
+      Mulai Sekarang
+    </button>
+  </section>
+
+  <section class="card-container">
+
+    <div class="card">
+      <h3>💰 Cari Cuan</h3>
+      <p>
+        Kerjakan task dan dapatkan saldo.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Pasang Engagement</h3>
+      <p>
+        Tingkatkan followers dan traffic.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🏆 Leaderboard</h3>
+      <p>
+        Naik level dan masuk ranking.
+      </p>
+    </div>
+
+  </section>
 
 </body>
 </html>
